@@ -1,0 +1,73 @@
+:root {
+  color-scheme: light dark;
+  --fg: #1a1a1a;
+  --muted: #555;
+  --bg: #f7f5f1;
+  --link: #0b5fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #eceae6;
+    --muted: #b0aca4;
+    --bg: #161513;
+    --link: #8cb4ff;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Noto Sans JP", "Segoe UI", sans-serif;
+  line-height: 1.55;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+h1,
+h2 {
+  font-family: "IBM Plex Serif", "Noto Serif JP", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+p,
+li {
+  color: var(--fg);
+}
+
+p + p {
+  margin-top: 0.85rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+a {
+  color: var(--link);
+}
+
+.muted,
+main > p:first-of-type + p {
+  color: var(--muted);
+}

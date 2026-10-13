@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy — rclone Google Drive OAuth</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Privacy policy</h1>
+      <p>Last updated: 2026-10-13</p>
+
+      <h2>Who this applies to</h2>
+      <p>
+        This OAuth client is for <strong>personal, single-user use</strong> by
+        the project owner only. It is not offered as a public product or
+        multi-tenant service.
+      </p>
+
+      <h2>What data is accessed</h2>
+      <p>
+        With the user’s consent, the local rclone process may read and write
+        files in that user’s Google Drive solely to store and manage an
+        encrypted restic backup repository.
+      </p>
+
+      <h2>What we collect / store</h2>
+      <ul>
+        <li>
+          <strong>No website analytics or accounts</strong> on these GitHub
+          Pages.
+        </li>
+        <li>
+          <strong>No server-side storage</strong> of Drive contents or OAuth
+          tokens. Tokens are kept in the user’s local rclone config.
+        </li>
+        <li>
+          Backup payload is encrypted by restic before upload; the OAuth
+          client does not receive the restic encryption password.
+        </li>
+      </ul>
+
+      <h2>Third parties</h2>
+      <p>
+        Authentication is handled by Google. Usage of Google APIs is subject to
+        Google’s policies. These static pages are hosted on GitHub Pages.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this personal client:
+        <a href="https://github.com/mitac-31709/rclone-oauth-branding/issues"
+          >GitHub issues</a
+        >.
+      </p>
+
+      <h2>日本語要約</h2>
+      <p>
+        本 OAuth クライアントは所有者本人のバックアップ用途のみです。本サイトは
+        静的ページのみで、アクセス解析やアカウントはありません。Google Drive
+        へのアクセスはローカルの rclone が行い、トークンは利用者の PC 上にのみ
+        保存されます。バックアップ本体は restic で暗号化されます。
+      </p>
+
+      <p><a href="index.html">← Home</a></p>
+    </main>
+  </body>
+</html>
